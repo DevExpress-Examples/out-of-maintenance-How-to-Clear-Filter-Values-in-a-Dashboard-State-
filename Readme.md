@@ -1,5 +1,5 @@
 *Files to look at*:
-* [DesignerForm1.cs](./CS/WinFormsDashboard_DashboardState/Form1.cs) (VB: [DesignerForm1.vb](./VB/WinFormsDashboard_DashboardState/Form1.vb))
+* [DesignerForm1.cs](./CS/WinDesignerDashboardState/DesignerForm1.cs) (VB: [DesignerForm1.vb](./VB/WinDesignerDashboardState/DesignerForm1.vb))
 
 # How to Clear Filter Values in a Dashboard State 
 
