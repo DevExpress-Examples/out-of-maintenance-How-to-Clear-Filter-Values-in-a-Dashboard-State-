@@ -9,14 +9,16 @@ This example shows how to clear/select all filter values in a Dashboard state.
 
 When the application starts, the **DashboardDesigner** loads a dashboard and a [DashboardState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardCommon.DashboardState) object.
 
-To clear filters (unselect all values), pass an empty **MasterFilterValues** object of a dashboard item to the entire dashboard state. Next, set the [UseNeutralFilterMode](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardDesigner.UseNeutralFilterMode?p=netframework) property to **true**. 
+When the [neutral filter mode](https://docs.devexpress.com/Dashboard/400262/common-features/interactivity/neutral-filter-mode?p=netframework) is enabled (**UseNeutralFilterMode == true**), pass an empty **MasterFilterValues** object of a dashboard item to the entire dashboard state to clear filters (unselect all values).
 
-To select all values, assign _null_ to the **MasterFilterValues** object of a dashboard item and pass it to the entire dashboard state. Next, set the [UseNeutralFilterMode](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardDesigner.UseNeutralFilterMode?p=netframework) property to **false**
+When the [neutral filter mode](https://docs.devexpress.com/Dashboard/400262/common-features/interactivity/neutral-filter-mode?p=netframework) is disabled (**UseNeutralFilterMode == false**), for the **multiple** master filter mode there is a difference between _null_ and _empty_ master filter values:
 
 |MasterFilterValues values|Behavior|
 |----|----|
 | MasterFilterValues = null | The control filters data by all values (all values are selected). |
 | MasterFilterValues = [] | The control excludes all filter (no data is selected). |
+
+To select all values, assign _null_ to the **MasterFilterValues** object of a dashboard item and pass it to the entire dashboard state.
 
 The [DashboardDesigner.SetDashboardState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWin.DashboardDesigner.SetDashboardState(DevExpress.DashboardCommon.DashboardState)?p=netframework) method applies the created dashboard state at runtime. 
 
